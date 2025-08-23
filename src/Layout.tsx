@@ -27,15 +27,15 @@ export default function Layout() {
   return (
     <div className="flex bg-[#6597E2] min-h-screen max-w-screen">
       {/* SideBar */}
-      <div className="group w-16 hover:min-w-48 flex flex-col py-8 gap-4 shadow-lg transition-all duration-300 justify-center ml-2 ">
+      <div className="group w-16 hover:min-w-48 flex flex-col py-8 gap-4 shadow-lg transition-all duration-10000 ease-in-out justify-center ml-2 ">
         {menuItems.map((item) => (
           <button
             key={item.path}
             onClick={() => navigate(item.path)}
-            className="flex items-center gap-2 px-4 py-2 rounded-lg hover:bg-[#4F82CF] transition"
+            className="flex items-center gap-2 px-4 py-2 rounded-lg hover:bg-[#4F82CF] transition ease-in-out"
           >
             <span className="text-white text-lg">{item.icon}</span>
-            <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+            <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity esae-in-out duration-300 whitespace-nowrap">
               {item.name}
             </span>
           </button>

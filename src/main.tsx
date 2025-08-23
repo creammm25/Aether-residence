@@ -19,7 +19,6 @@ createRoot(document.getElementById('root')!).render(
           <Route path="/news" element={<NewsPage />} />
           <Route path="/booking" element={<CommonArea />} />
           <Route path="/booking/admin" element={<CommonAreaAdmin />} />
-  
         </Route>
       </Routes>
     </BrowserRouter>,
